@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_snc_datasilosvam_start.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<div style="padding-left: 20px;">
+<span style="visibility: hidden;">_CUT_HERE_</span>
+	<g2:no_escape>$[
+		var docapi = new x_snc_devtools.DocumentationAPI('4f1d5e84db0b6c10ba15a35305961928');
+		docapi.RenderHeader();
+	]</g2:no_escape>
+	
+	<g:breakpoint />
+	
+	<p>Welcome to DataSilosVAM. This scoped app contains specific extentions to the DataSilos scoped app for the Vaccine Administration Management product.</p>
+	
+	<h2>Features</h2> 
+	<ul>
+		<li>TODO</li>
+	</ul>
+	
+	<h2>System Requirements</h2>
+	<ul>
+		<li>Paris</li>
+		<li>DevTools 1.10.0</li>
+		<li>DataSilos 2.4.0</li>
+	</ul>
+	
+	
+	<h2>Installation</h2>
+	<p>To install the app follow these steps:</p>
+	<ol>
+		<g2:no_escape>$[
+			docapi.RenderInstallationInstructionsImportFromSourceControl(
+				'DevTools',
+				'https://github.com/saschawildgrube/servicenow-devtools');
+		]</g2:no_escape>
+
+		<g2:no_escape>$[
+			docapi.RenderInstallationInstructionsImportFromSourceControl(
+				'DataSilos',
+				'https://github.com/saschawildgrube/servicenow-datasilos');
+		]</g2:no_escape>
+		
+		<g2:no_escape>$[
+			docapi.RenderInstallationInstructionsImportFromSourceControl(
+				'DataSilosVAM',
+				'https://github.com/saschawildgrube/servicenow-datasilos-vam');
+		]</g2:no_escape>
+
+		<!--
+		<li>Run the&#160;<a href="/sys_atf_test_suite.do?sys_id=4a8550391b5b8850a89720a8ec4bcbd9&amp;sysparm_view=DevTools&amp;sysparm_view_forced=true" target="_blank">DevTools Test Suite</a></li>
+	 
+-->
+	</ol>
+	
+	<!--
+	<h2>Reference</h2>
+-->
+	<!--
+	<h3>Script includes</h3>
+	<g2:no_escape>$[docapi.RenderScriptIncludes()]</g2:no_escape>
+	
+	<h3>Test step configurations</h3>
+	<p>DevTools contains the following customized test step configurations:</p>
+	<g2:no_escape>$[docapi.RenderTestStepConfigurations()]</g2:no_escape>
+-->	
+
+	
+	<h2>Release Notes</h2>
+
+	<h3>1.1.0 - 2021-TODO</h3>
+	<ol>
+		<li>TODO</li>
+	</ol>
+	
+	<h3>1.0.0 - 2021-03-04</h3>
+	<p>First baselined version</p>
+	
+<span style="visibility: hidden;">_CUT_HERE_</span>
+</div>
+</j:jelly>]]></html>
+        <name>start</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 19:37:17</sys_created_on>
+        <sys_id>a054b680db8b6c10ba15a353059619ec</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>start</sys_name>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_update_name>sys_ui_page_a054b680db8b6c10ba15a353059619ec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 19:40:59</sys_updated_on>
+    </sys_ui_page>
+</record_update>
