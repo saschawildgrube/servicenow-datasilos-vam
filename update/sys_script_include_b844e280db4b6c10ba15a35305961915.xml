@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_datasilosvam.Debug</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Logs a debug message to the application log.</description>
+        <name>Debug</name>
+        <script><![CDATA[function Debug(strText)
+{
+	x_snc_datasilos.Debug('DataSilosVAM: '+strText);
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 18:27:16</sys_created_on>
+        <sys_id>b844e280db4b6c10ba15a35305961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Debug</sys_name>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_update_name>sys_script_include_b844e280db4b6c10ba15a35305961915</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 18:27:16</sys_updated_on>
+    </sys_script_include>
+</record_update>
