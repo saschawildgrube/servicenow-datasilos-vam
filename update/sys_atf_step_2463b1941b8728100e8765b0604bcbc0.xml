@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Validate there is at least one record in 'sys_script_include' matching query:
+Sys ID = 3d55d258db209410ba15a353059619af
+and Script contains aRelatedRecords = aRelatedRecords.concat(x_snc_datasilosvam.GetRelatedRecords(record));
+With a failure timeout of 5 Seconds</description>
+        <display_name>Record Query</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>4</order>
+        <snapshot/>
+        <step_config display_value="Record Query">2d82e3c7531400109e02ddeeff7b12a7</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-18 09:32:20</sys_created_on>
+        <sys_id>2463b1941b8728100e8765b0604bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Query</sys_name>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_update_name>sys_atf_step_2463b1941b8728100e8765b0604bcbc0</sys_update_name>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-18 09:32:20</sys_updated_on>
+        <table>sys_script_include</table>
+        <test display_value="DataSilosVAM - Installation">4cb2a600db4b6c10ba15a35305961954</test>
+        <timeout>1970-01-01 00:00:05</timeout>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=2463b1941b8728100e8765b0604bcbc0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>2463b1941b8728100e8765b0604bcbc0</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-18 09:32:20</sys_created_on>
+        <sys_id>698335941b8728100e8765b0604bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-18 09:32:20</sys_updated_on>
+        <value>sys_id=3d55d258db209410ba15a353059619af^scriptLIKEaRelatedRecords = aRelatedRecords.concat(x_snc_datasilosvam.GetRelatedRecords(record));^EQ</value>
+        <variable display_value="">915990ab531000109e02ddeeff7b12f8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>2463b1941b8728100e8765b0604bcbc0</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-18 09:32:20</sys_created_on>
+        <sys_id>a58335941b8728100e8765b0604bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-18 09:32:20</sys_updated_on>
+        <value>sys_script_include</value>
+        <variable display_value="">78b8d86b531000109e02ddeeff7b12f3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>2463b1941b8728100e8765b0604bcbc0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-18 09:32:20</sys_created_on>
+        <sys_id>e18335941b8728100e8765b0604bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-18 09:32:20</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02fb0027531000109e02ddeeff7b120b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>2463b1941b8728100e8765b0604bcbc0</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-18 09:32:20</sys_created_on>
+        <sys_id>ed8335941b8728100e8765b0604bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-18 09:32:20</sys_updated_on>
+        <value>records_match_query</value>
+        <variable display_value="">b86c0427531000109e02ddeeff7b1227</variable>
+    </sys_variable_value>
+</record_update>
