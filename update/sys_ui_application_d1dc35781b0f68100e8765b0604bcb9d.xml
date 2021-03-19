@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>Vaccine Administration Management</name>
+        <order/>
+        <roles>sn_vaccine_sm.viewer,sn_vaccine_sm.user,sn_vaccine_sm.inventory_manager,sn_vaccine_sm.inventory_viewer</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-19 23:29:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d1dc35781b0f68100e8765b0604bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vaccine Administration Management</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_update_name>sys_ui_application_d1dc35781b0f68100e8765b0604bcb9d</sys_update_name>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-19 23:29:58</sys_updated_on>
+    </sys_ui_application>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-18 13:03:44</sys_created_on>
+        <sys_id>5ee322981b0b28100e8765b0604bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_snc_datasilos.manager</sys_name>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_security_acl display_value="">d6e322981b0b28100e8765b0604bcbb2</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_5ee322981b0b28100e8765b0604bcbb2</sys_update_name>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-18 13:03:44</sys_updated_on>
+        <sys_user_role display_value="x_snc_datasilos.manager" name="x_snc_datasilos.manager">23df0da71b48d490a89720a8ec4bcb72</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</application>
+        <file_path/>
+        <instance_id>3376da91db26ac1091232f17d49619e1</instance_id>
+        <instance_name>vamde</instance_name>
+        <name>sys_security_acl_role_5ee322981b0b28100e8765b0604bcbb2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>sascha.wildgrube</sys_created_by><sys_created_on>2021-03-18 13:03:44</sys_created_on><sys_id>5ee322981b0b28100e8765b0604bcbb2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.x_snc_datasilos.manager</sys_name><sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package><sys_policy/><sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope><sys_security_acl display_value="">d6e322981b0b28100e8765b0604bcbb2</sys_security_acl><sys_update_name>sys_security_acl_role_5ee322981b0b28100e8765b0604bcbb2</sys_update_name><sys_updated_by>sascha.wildgrube</sys_updated_by><sys_updated_on>2021-03-18 13:03:44</sys_updated_on><sys_user_role display_value="x_snc_datasilos.manager" name="x_snc_datasilos.manager">23df0da71b48d490a89720a8ec4bcb72</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>897710706</payload_hash>
+        <record_name>.x_snc_datasilos.manager</record_name>
+        <reverted_from/>
+        <source>db90cfc41bcfe4100e8765b0604bcbcd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-18 13:03:44</sys_created_on>
+        <sys_id>5ae322981b0b28100e8765b0604bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178456f49620000001</sys_recorded_at>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-18 13:03:44</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>92e32298a80b281058cbff90a77021b5</update_guid>
+        <update_guid_history>92e32298a80b281058cbff90a77021b5:897710706</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".x_snc_datasilos.manager">6dbfa5f81b8b68100e8765b0604bcbbb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-19 22:32:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>a7ad1c8d309f4f188d6037f9cc304644</sys_id>
+        <sys_metadata>5ee322981b0b28100e8765b0604bcbb2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_snc_datasilos.manager</sys_name>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_parent display_value="">d6e322981b0b28100e8765b0604bcbb2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_scope_delete display_value="">71a6c815ae97453cb0d30e3ce5450be1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_5ee322981b0b28100e8765b0604bcbb2</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_5ee322981b0b28100e8765b0604bcbb2">5ae322981b0b28100e8765b0604bcbb5</sys_update_version>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-19 22:32:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
