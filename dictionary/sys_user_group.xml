@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="all_tables.text_index_translations=true,iterativeDelete=true" defaultsort="-1" label="Gruppe" max_length="40" name="sys_user_group" sizeclass="22" text_index="true" type="collection">
+    <element attributes="all_tables.text_index_translations=true,iterativeDelete=true" defaultsort="-1" label="Gruppe" max_length="40" name="sys_user_group" sizeclass="25" text_index="true" type="collection">
         <element label="Vaccination Center" max_length="32" name="x_snc_datasilosvam_vaccination_center" reference="sn_vaccine_sm_center" type="reference"/>
     </element>
 </database>

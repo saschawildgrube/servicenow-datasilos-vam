@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_datasilosvam.RecordUpdate</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>RecordUpdate</name>
+        <script><![CDATA[function RecordUpdate(record)
+{
+	var RenderValue = x_snc_devtools.RenderValue;
+	var IsValidRecord = x_snc_devtools.IsValidRecord;
+	var RecordAddGroupToWhitelist = x_snc_datasilos.RecordAddGroupToWhitelist;
+	
+	if (IsValidRecord(record) == false)
+	{
+		return false;
+	}
+	
+	var strTable = record.getRecordClassName(); 
+	
+	if (IsTableSupported(strTable))
+	{
+		if (  strTable == 'sn_vaccine_sm_request'
+		   || strTable == 'sn_vaccine_sm_task')
+		{
+			var GetStringValue = x_snc_devtools.GetStringValue;
+
+			var strVaccineCenterSysId = GetStringValue(record.vaccine_center);
+			var aGroups = GetGroupsFromVaccinationCenter(strVaccineCenterSysId);
+			for (var nGroup = 0; nGroup < aGroups.length; nGroup++)
+			{
+				RecordAddGroupToWhitelist(record,aGroups[nGroup]);
+			}
+		}
+		return true;
+	}
+	
+	
+	//Debug('RecordUpdate: Unsupported class name: '+strTable+'');
+	return false;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-20 13:07:56</sys_created_on>
+        <sys_id>29b7b8891bc3a8100e8765b0604bcb69</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>RecordUpdate</sys_name>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_update_name>sys_script_include_29b7b8891bc3a8100e8765b0604bcb69</sys_update_name>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-20 13:14:48</sys_updated_on>
+    </sys_script_include>
+</record_update>

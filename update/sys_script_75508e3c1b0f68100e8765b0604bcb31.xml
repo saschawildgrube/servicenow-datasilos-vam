@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>DataSilos - sn_vaccine_sm_request - set</name>
+        <name>DataSilos - sn_vaccine_sm_request - VAM</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -28,20 +28,7 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	
-	var GetStringValue = x_snc_devtools.GetStringValue;
-
-	var strVaccineCenterSysId = GetStringValue(current.vaccine_center);
-	
-	var grGroup = new GlideRecord('sys_user_group');
-	grGroup.addQuery('x_snc_datasilosvam_vaccination_center','=',strVaccineCenterSysId);
-	grGroup.query();
-	while (grGroup.next())
-	{
-		x_snc_datasilos.RecordAddGroupToWhitelist(current,grGroup.sys_id);
-	}
-	
-	
+	ExecuteBusinessRule(current);
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>sascha.wildgrube</sys_created_by>
@@ -49,15 +36,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>75508e3c1b0f68100e8765b0604bcb31</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>DataSilos - sn_vaccine_sm_request - set</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>DataSilos - sn_vaccine_sm_request - VAM</sys_name>
         <sys_overrides/>
         <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy/>
         <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_script_75508e3c1b0f68100e8765b0604bcb31</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-19 23:45:17</sys_updated_on>
+        <sys_updated_on>2021-03-20 13:15:48</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
