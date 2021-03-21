@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Checks if DataSilos features are correctly implemented for table: [sn_apptmnt_booking_appointment_booking]
+</description>
+        <display_name>DataSilos - Check table implementation</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>4</order>
+        <snapshot/>
+        <step_config display_value="DataSilos - Check table implementation">88b932e8db582810ba15a35305961982</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-21 14:49:07</sys_created_on>
+        <sys_id>93b896951b036c100e8765b0604bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DataSilos - Check table implementation</sys_name>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_update_name>sys_atf_step_93b896951b036c100e8765b0604bcb90</sys_update_name>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-21 14:49:07</sys_updated_on>
+        <table/>
+        <test display_value="DataSilosVAM - Implementation">5d236e00db4b6c10ba15a35305961925</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=93b896951b036c100e8765b0604bcb90"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>93b896951b036c100e8765b0604bcb90</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-21 14:49:07</sys_created_on>
+        <sys_id>03c81a951b036c100e8765b0604bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-21 14:49:07</sys_updated_on>
+        <value>4f1d5e84db0b6c10ba15a35305961928</value>
+        <variable display_value="">4094311cdb87ac10ba15a35305961974</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>93b896951b036c100e8765b0604bcb90</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-21 14:49:07</sys_created_on>
+        <sys_id>0bc81a951b036c100e8765b0604bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-21 14:49:07</sys_updated_on>
+        <value>sn_apptmnt_booking_appointment_booking</value>
+        <variable display_value="">ae5bba2cdb582810ba15a3530596193b</variable>
+    </sys_variable_value>
+</record_update>
