@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="no_attachment=true" label="Persönliche Informationen" max_length="40" name="sn_vaccine_sm_personal_info" sizeclass="30" type="collection">
+        <element label="DataSilos Last Maintenance" max_length="40" name="x_snc_datasilosvam_last_maintenance" type="glide_date_time"/>
+    </element>
+</database>
