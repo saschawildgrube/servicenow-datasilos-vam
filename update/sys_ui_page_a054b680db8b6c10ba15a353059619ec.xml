@@ -14,20 +14,28 @@
 		docapi.RenderHeader();
 	]</g2:no_escape>
 	
-	<g:breakpoint />
-	
 	<p>Welcome to DataSilosVAM. This scoped app contains specific extentions to the DataSilos scoped app for the Vaccine Administration Management product.</p>
 	
 	<h2>Features</h2> 
 	<ul>
-		<li>TODO</li>
+		<li>Groups can be associated to a vaccination center.</li>
+		<li>Access to the following tables is restricted based on a user's association to a group and hence their association with one or more vaccination centers:
+			<ol>
+				<li>sn_vaccine_sm_request</li>
+				<li>sn_vaccine_sm_task</li>
+				<li>sn_apptmnt_booking_appointment_booking</li>
+				<li>csm_consumer_user</li>
+				<li>sn_vaccine_sm_personal_info</li>
+			</ol>
+		</li>
+		<li>Depeding on the table, a different mechanism is used to determine the related vaccination center. If more than one vaccination center can be determined multiple groups may be added to the whitelist.</li>
 	</ul>
 	
 	<h2>System Requirements</h2>
 	<ul>
 		<li>Paris</li>
-		<li>DevTools 1.11.0</li>
-		<li>DataSilos 2.4.0</li>
+		<li>DevTools 1.12.0</li>
+		<li>DataSilos 2.5.0</li>
 	</ul>
 	
 	
@@ -52,8 +60,10 @@
 				'https://github.com/saschawildgrube/servicenow-datasilos-vam');
 		]</g2:no_escape>
 
-		<!--
-		<li>Run the&#160;<a href="/sys_atf_test_suite.do?sys_id=4a8550391b5b8850a89720a8ec4bcbd9&amp;sysparm_view=DevTools&amp;sysparm_view_forced=true" target="_blank">DevTools Test Suite</a></li>
+		<li>Setup ACLs according to the installation instructions in DataSilos for the tables in scope.</li>
+		<li>Assign the x_snc_datasilos.manager role to users who are in charge of operations.</li>
+		<li>Assign the x_snc_datasilos.sentinel role to all users who should NOT be impacted by data segregation. Note that the manager role does NOT contain the sentinel role.</li>
+		<li>Run the&#160;<a href="/sys_atf_test_suite.do?sys_id=c85fd60cdb0b6c10ba15a353059619da&amp;sysparm_view=DevTools&amp;sysparm_view_forced=true" target="_blank">DataSilosVAM Test Suite</a></li>
 -->
 		<li>Add this code to "x_snc_datasilos.GetConfig":
 			<pre>
@@ -84,7 +94,7 @@ aRelatedRecords = aRelatedRecords.concat(x_snc_datasilosvam.GetRelatedRecords(re
 	
 	<h2>Release Notes</h2>
 
-	<h3>1.0.0 - 2021-TODO</h3>
+	<h3>1.0.0 - 2021-03-22</h3>
 	<p>First baselined version</p>
 	
 <span style="visibility: hidden;">_CUT_HERE_</span>
@@ -96,13 +106,13 @@ aRelatedRecords = aRelatedRecords.concat(x_snc_datasilosvam.GetRelatedRecords(re
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-17 19:37:17</sys_created_on>
         <sys_id>a054b680db8b6c10ba15a353059619ec</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>start</sys_name>
         <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy/>
         <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_ui_page_a054b680db8b6c10ba15a353059619ec</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-18 09:25:55</sys_updated_on>
+        <sys_updated_on>2021-03-22 17:15:36</sys_updated_on>
     </sys_ui_page>
 </record_update>
