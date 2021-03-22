@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Checks if all ACLs are correctly configured for table: [csm_consumer_user]
+</description>
+        <display_name>DataSilos - Check ACLs</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>11</order>
+        <snapshot/>
+        <step_config display_value="DataSilos - Check ACLs">5f42f662db23d810ba15a353059619cd</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-21 15:07:28</sys_created_on>
+        <sys_id>29fcda151b836c100e8765b0604bcb6e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>DataSilos - Check ACLs</sys_name>
+        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_update_name>sys_atf_step_29fcda151b836c100e8765b0604bcb6e</sys_update_name>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-21 19:01:19</sys_updated_on>
+        <table/>
+        <test display_value="DataSilosVAM - Installation">4cb2a600db4b6c10ba15a35305961954</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=29fcda151b836c100e8765b0604bcb6e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>29fcda151b836c100e8765b0604bcb6e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-21 19:01:19</sys_created_on>
+        <sys_id>a982df551b07ac100e8765b0604bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-21 19:01:19</sys_updated_on>
+        <value>csm_consumer_user</value>
+        <variable display_value="">36b2fe62db23d810ba15a3530596192f</variable>
+    </sys_variable_value>
+</record_update>

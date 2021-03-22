@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="DataSilos">949c7f2fdbb78450ba15a353059619d6</application>
+        <assessment/>
+        <device_type/>
+        <filter table="sys_atf_test_suite">sys_id=c85fd60cdb0b6c10ba15a353059619da^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="c85fd60cdb0b6c10ba15a353059619da"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DETAIL</link_type>
+        <map_page/>
+        <mobile_title>VAM Test Suite</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sys_atf_test_suite</name>
+        <order>20005</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_snc_datasilos.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 18:07:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c36f9a0cdb0b6c10ba15a353059619b2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Test Suite</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_update_name>sys_app_module_c36f9a0cdb0b6c10ba15a353059619b2</sys_update_name>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-21 19:57:38</sys_updated_on>
+        <timeline_page/>
+        <title>Test Suite</title>
+        <uncancelable>false</uncancelable>
+        <view_name>DataSilos</view_name>
+        <window_name/>
+    </sys_app_module>
+</record_update>

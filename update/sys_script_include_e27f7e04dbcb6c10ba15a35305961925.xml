@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_datasilosvam.GetRelatedRecords</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>The VAM specific implementation of GetRelatedRecords.</description>
+        <name>GetRelatedRecords</name>
+        <script><![CDATA[function GetRelatedRecords(record)
+{
+	var IsValidRecord = x_snc_devtools.IsValidRecord;
+	var RenderValue = x_snc_devtools.RenderValue;
+
+	var aRelatedRecords = [];
+	
+	if (IsValidRecord(record) == false)
+	{
+		return aRelatedRecords;
+	}
+	
+	var strTable = record.getRecordClassName(); 
+	
+	if (strTable == 'sn_vaccine_sm_task')
+	{
+		/*
+		var grRelatedRecords = new GlideRecord('incident_task');
+		grRelatedRecords.addQuery('incident',record.getValue('sys_id'));
+		grRelatedRecords.query();
+		while (grRelatedRecords.next())
+		{
+			var strRelatedRecordSysId = grRelatedRecords.getValue('sys_id');
+			var grRelatedRecord = new GlideRecord('incident_task');
+			if (grRelatedRecord.get(strRelatedRecordSysId))
+			{
+				aRelatedRecords.push(grRelatedRecord);
+			}
+		}
+		*/
+	}
+	
+	return aRelatedRecords;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 20:26:55</sys_created_on>
+        <sys_id>e27f7e04dbcb6c10ba15a35305961925</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>GetRelatedRecords</sys_name>
+        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_update_name>sys_script_include_e27f7e04dbcb6c10ba15a35305961925</sys_update_name>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-19 22:56:41</sys_updated_on>
+    </sys_script_include>
+</record_update>

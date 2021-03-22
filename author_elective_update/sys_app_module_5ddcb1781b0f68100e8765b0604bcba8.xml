@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Vaccine Administration Management">c32ba2453b912010c24e870044efc464</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>DataSilos</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_snc_datasilosvam_datasilo</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-19 23:29:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5ddcb1781b0f68100e8765b0604bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DataSilos</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_update_name>sys_app_module_5ddcb1781b0f68100e8765b0604bcba8</sys_update_name>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-19 23:29:58</sys_updated_on>
+        <timeline_page/>
+        <title>DataSilos</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</application>
+        <file_path/>
+        <instance_id>3376da91db26ac1091232f17d49619e1</instance_id>
+        <instance_name>vamde</instance_name>
+        <name>sys_app_module_5ddcb1781b0f68100e8765b0604bcba8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Vaccine Administration Management">c32ba2453b912010c24e870044efc464</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>DataSilos</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_snc_datasilosvam_datasilo</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>sascha.wildgrube</sys_created_by><sys_created_on>2021-03-19 23:29:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5ddcb1781b0f68100e8765b0604bcba8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>DataSilos</sys_name><sys_overrides/><sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package><sys_policy/><sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope><sys_update_name>sys_app_module_5ddcb1781b0f68100e8765b0604bcba8</sys_update_name><sys_updated_by>sascha.wildgrube</sys_updated_by><sys_updated_on>2021-03-19 23:29:58</sys_updated_on><timeline_page/><title>DataSilos</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>75568273</payload_hash>
+        <record_name>DataSilos</record_name>
+        <reverted_from/>
+        <source>db90cfc41bcfe4100e8765b0604bcbcd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-19 23:29:58</sys_created_on>
+        <sys_id>99dc35781b0f68100e8765b0604bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1784cd2fb9d0000001</sys_recorded_at>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-19 23:29:58</sys_updated_on>
+        <type>Module</type>
+        <update_guid>d1dc3578290f68107714d316efb0229c</update_guid>
+        <update_guid_history>d1dc3578290f68107714d316efb0229c:75568273</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="DataSilos">52cdf1b81b0f68100e8765b0604bcb42</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-19 23:34:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>36646e2968dc4cf8bc77786658070010</sys_id>
+        <sys_metadata>5ddcb1781b0f68100e8765b0604bcba8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DataSilos</sys_name>
+        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_scope_delete display_value="">71a6c815ae97453cb0d30e3ce5450be1</sys_scope_delete>
+        <sys_update_name>sys_app_module_5ddcb1781b0f68100e8765b0604bcba8</sys_update_name>
+        <sys_update_version display_value="sys_app_module_5ddcb1781b0f68100e8765b0604bcba8">99dc35781b0f68100e8765b0604bcb9c</sys_update_version>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-19 23:34:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

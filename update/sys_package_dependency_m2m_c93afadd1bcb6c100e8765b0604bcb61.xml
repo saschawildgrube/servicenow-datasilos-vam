@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Customer Service Base Entities" source="com.snc.cs_base">cc1dbe1ddba22010ee94d03cd39619de</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-21 17:15:03</sys_created_on>
+        <sys_id>c93afadd1bcb6c100e8765b0604bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-21 17:15:03</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

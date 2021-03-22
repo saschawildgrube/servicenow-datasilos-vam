@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_snc_datasilosvam_ghost" label="DataSilos Ghost" language="en" table="csm_consumer_user">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_snc_datasilosvam_ghost</element>
+            <help/>
+            <hint/>
+            <label>DataSilos Ghost</label>
+            <language>en</language>
+            <name>csm_consumer_user</name>
+            <plural>DataSilos Ghosts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sascha.wildgrube</sys_created_by>
+            <sys_created_on>2021-03-21 21:42:36</sys_created_on>
+            <sys_id>c8773bd51b47ec100e8765b0604bcbee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>DataSilos Ghost</sys_name>
+            <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+            <sys_update_name>sys_documentation_csm_consumer_user_x_snc_datasilosvam_ghost_en</sys_update_name>
+            <sys_updated_by>sascha.wildgrube</sys_updated_by>
+            <sys_updated_on>2021-03-21 21:42:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

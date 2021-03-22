@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>Vaccine Administration Management</name>
+        <order/>
+        <roles>sn_vaccine_sm.viewer,sn_vaccine_sm.user,sn_vaccine_sm.inventory_manager,sn_vaccine_sm.inventory_viewer</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-19 23:29:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d1dc35781b0f68100e8765b0604bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vaccine Administration Management</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_update_name>sys_ui_application_d1dc35781b0f68100e8765b0604bcb9d</sys_update_name>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-19 23:29:58</sys_updated_on>
+    </sys_ui_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</application>
+        <file_path/>
+        <instance_id>3376da91db26ac1091232f17d49619e1</instance_id>
+        <instance_name>vamde</instance_name>
+        <name>sys_ui_application_d1dc35781b0f68100e8765b0604bcb9d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>Vaccine Administration Management</name><order/><roles>sn_vaccine_sm.viewer,sn_vaccine_sm.user,sn_vaccine_sm.inventory_manager,sn_vaccine_sm.inventory_viewer</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>sascha.wildgrube</sys_created_by><sys_created_on>2021-03-19 23:29:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d1dc35781b0f68100e8765b0604bcb9d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Vaccine Administration Management</sys_name><sys_overrides/><sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package><sys_policy/><sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope><sys_update_name>sys_ui_application_d1dc35781b0f68100e8765b0604bcb9d</sys_update_name><sys_updated_by>sascha.wildgrube</sys_updated_by><sys_updated_on>2021-03-19 23:29:58</sys_updated_on></sys_ui_application></record_update>]]></payload>
+        <payload_hash>1724983720</payload_hash>
+        <record_name>Vaccine Administration Management</record_name>
+        <reverted_from/>
+        <source>db90cfc41bcfe4100e8765b0604bcbcd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-19 23:29:58</sys_created_on>
+        <sys_id>9ddc35781b0f68100e8765b0604bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1784cd2fbde0000001</sys_recorded_at>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-19 23:29:58</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>d5dc35783f0f681009c618c1e5b1509f</update_guid>
+        <update_guid_history>d5dc35783f0f681009c618c1e5b1509f:1724983720</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-21 19:54:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>0243997b3324401faa45fcb2b887b8c9</sys_id>
+        <sys_metadata>d1dc35781b0f68100e8765b0604bcb9d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vaccine Administration Management</sys_name>
+        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_scope_delete display_value="">71a6c815ae97453cb0d30e3ce5450be1</sys_scope_delete>
+        <sys_update_name>sys_ui_application_d1dc35781b0f68100e8765b0604bcb9d</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_d1dc35781b0f68100e8765b0604bcb9d">9ddc35781b0f68100e8765b0604bcb9f</sys_update_version>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-21 19:54:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
