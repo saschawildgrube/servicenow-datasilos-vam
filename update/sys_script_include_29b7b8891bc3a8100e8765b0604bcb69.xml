@@ -24,7 +24,6 @@
 	
 	if (IsTableSupported(strTable))
 	{
-		
 		if (strTable == 'sn_vaccine_sm_request')
 		{
 			var aGroups = GetGroupsFromVaccinationCenter(record.preferred_center);
@@ -34,7 +33,6 @@
 			}
 			return true;
 		}
-
 		if (strTable == 'sn_vaccine_sm_task')
 		{
 			var aGroups = GetGroupsFromVaccinationCenter(record.vaccine_center);
@@ -46,14 +44,11 @@
 		}
 		if (strTable == 'sn_apptmnt_booking_appointment_booking')
 		{
-			var strLocationSysId = GetStringValue(record.location);
-			
 			var grVC = new GlideRecord('sn_vaccine_sm_center');
-			grVC.addQuery('location','=',strLocationSysId);
+			grVC.addQuery('location','=',record.location);
 			grVC.query();
 			while (grVC.next())
 			{
-				Debug('RecordUpdate: sn_apptmnt_booking_appointment_booking: VC: '+grVC.name);
 				var aGroups = GetGroupsFromVaccinationCenter(grVC.sys_id);
 				for (var nGroup = 0; nGroup < aGroups.length; nGroup++)
 				{
@@ -92,8 +87,6 @@
 			}
 			return true;
 		}	
-		
-		
 	}
 	return false;
 }]]></script>
@@ -101,13 +94,13 @@
         <sys_created_by>sascha.wildgrube</sys_created_by>
         <sys_created_on>2021-03-20 13:07:56</sys_created_on>
         <sys_id>29b7b8891bc3a8100e8765b0604bcb69</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>RecordUpdate</sys_name>
         <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_script_include_29b7b8891bc3a8100e8765b0604bcb69</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-21 22:13:13</sys_updated_on>
+        <sys_updated_on>2021-03-22 09:42:14</sys_updated_on>
     </sys_script_include>
 </record_update>
