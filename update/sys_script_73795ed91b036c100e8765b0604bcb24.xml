@@ -39,9 +39,9 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_name>DataSilos - sn_apptmnt_booking_appointme</sys_name>
         <sys_overrides/>
-        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy/>
-        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_script_73795ed91b036c100e8765b0604bcb24</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
         <sys_updated_on>2021-03-21 14:52:10</sys_updated_on>

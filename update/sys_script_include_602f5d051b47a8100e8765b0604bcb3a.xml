@@ -2,26 +2,59 @@
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>package_private</access>
         <active>true</active>
-        <api_name>x_snc_datasilosvam.RecordMaintenance</api_name>
+        <api_name>x_snc_datasilosvam.Maintenance</api_name>
         <caller_access/>
         <client_callable>false</client_callable>
         <description/>
-        <name>RecordMaintenance</name>
-        <script><![CDATA[function RecordMaintenance(grRecords)
+        <name>Maintenance</name>
+        <script><![CDATA[function Maintenance(grRecords, strTopic)
 {
-	return x_snc_datasilos.RecordMaintenance(grRecords);
+	var RecordBulkProcessor = x_snc_devtools.RecordBulkProcessor;
+	var RecordGetVisibilityHash = x_snc_datasilos.RecordGetVisibilityHash;
+	var RecordGetGhostValue = x_snc_datasilos.RecordGetGhostValue;
+	var GetStringValue = x_snc_devtools.GetStringValue;
+	var GetConfigValue = x_snc_datasilos.GetConfigValue;
+
+	var strTable = grRecords.getRecordClassName();
+	strTopic = GetStringValue(strTopic);
+	var strTopicLog = '';
+	if (strTopic != '')
+	{
+		strTopicLog = strTopic+': ';
+	}
+	
+	function CallbackRecordProcessor(record)
+	{
+		return RecordMaintenance(record);
+	}
+	function CallbackLog(strText)
+	{
+		Log('Maintenance: '+strTopicLog+'['+strTable+']: '+strText);
+	}
+
+	var nLogFrequency = GetConfigValue('maintenance','log_frequency');
+
+	return RecordBulkProcessor(
+		grRecords,
+		CallbackRecordProcessor, // callback function to work on a single record
+		GetScopeFromTable(strTable)+'_last_maintenance', // the name of the field that stores that date/time of the last processing
+		100000, // process up to 100K records
+		60*9, // run for 9 minutes
+		CallbackLog,
+		nLogFrequency
+		);
 }]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>sascha.wildgrube</sys_created_by>
         <sys_created_on>2021-03-20 16:01:29</sys_created_on>
         <sys_id>602f5d051b47a8100e8765b0604bcb3a</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>RecordMaintenance</sys_name>
-        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Maintenance</sys_name>
+        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_script_include_602f5d051b47a8100e8765b0604bcb3a</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-21 20:12:07</sys_updated_on>
+        <sys_updated_on>2021-03-22 22:22:56</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -15,14 +15,14 @@
         <sys_created_by>sascha.wildgrube</sys_created_by>
         <sys_created_on>2021-03-21 15:06:43</sys_created_on>
         <sys_id>65cc9a911b836c100e8765b0604bcbb3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>DataSilos - Check ACLs</sys_name>
-        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy/>
-        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_atf_step_65cc9a911b836c100e8765b0604bcbb3</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-21 15:06:43</sys_updated_on>
+        <sys_updated_on>2021-03-21 19:00:42</sys_updated_on>
         <table/>
         <test display_value="DataSilosVAM - Installation">4cb2a600db4b6c10ba15a35305961954</test>
         <timeout/>
@@ -35,11 +35,11 @@
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>sascha.wildgrube</sys_created_by>
-        <sys_created_on>2021-03-21 15:06:43</sys_created_on>
-        <sys_id>c9dc5ed11b836c100e8765b0604bcbc9</sys_id>
+        <sys_created_on>2021-03-21 19:00:42</sys_created_on>
+        <sys_id>646217551b07ac100e8765b0604bcb37</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-21 15:06:43</sys_updated_on>
+        <sys_updated_on>2021-03-21 19:00:42</sys_updated_on>
         <value>sn_apptmnt_booking_appointment_booking</value>
         <variable display_value="">36b2fe62db23d810ba15a3530596192f</variable>
     </sys_variable_value>
