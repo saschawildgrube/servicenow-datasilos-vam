@@ -77,6 +77,20 @@ config = x_snc_devtools.Merge(config,x_snc_datasilosvam.GetConfigBaseline());
 aRelatedRecords = aRelatedRecords.concat(x_snc_datasilosvam.GetRelatedRecords(record));
 			</pre>
 		</li>
+		<li>Add this code to "x_snc_datasilos.IsTableActive":
+			<pre>
+if (strTable == 'sn_apptmnt_booking_appointment_booking')
+{
+	if (x_snc_devtools.IsUserHasRoleExactly('sn_vaccine_sm.user') == true)
+	{
+		if (x_snc_devtools.IsUserHasRoleExactly('sn_vaccine_sm.manager') == false)
+		{
+			return false;
+		}
+	}
+}
+			</pre>
+		</li>
 	 
 
 	</ol>
@@ -86,7 +100,7 @@ aRelatedRecords = aRelatedRecords.concat(x_snc_datasilosvam.GetRelatedRecords(re
 	
 	<h2>Release Notes</h2>
 
-	<h3>1.0.0 - 2021-03-22</h3>
+	<h3>1.0.0 - 2021-03-23</h3>
 	<p>First baselined version</p>
 	
 <span style="visibility: hidden;">_CUT_HERE_</span>
@@ -98,13 +112,13 @@ aRelatedRecords = aRelatedRecords.concat(x_snc_datasilosvam.GetRelatedRecords(re
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-17 19:37:17</sys_created_on>
         <sys_id>a054b680db8b6c10ba15a353059619ec</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>start</sys_name>
         <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy/>
         <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_ui_page_a054b680db8b6c10ba15a353059619ec</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-22 22:32:47</sys_updated_on>
+        <sys_updated_on>2021-03-24 11:00:21</sys_updated_on>
     </sys_ui_page>
 </record_update>
