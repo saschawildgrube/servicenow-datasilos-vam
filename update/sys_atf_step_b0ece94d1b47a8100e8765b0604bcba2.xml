@@ -8,21 +8,21 @@
         <inputs/>
         <mugshots_cache_json/>
         <notes/>
-        <order>6</order>
+        <order>9</order>
         <snapshot/>
         <step_config display_value="DevTools - Check table cross scope access">8d6e6be5db28e850ba15a35305961936</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>sascha.wildgrube</sys_created_by>
         <sys_created_on>2021-03-20 16:59:06</sys_created_on>
         <sys_id>b0ece94d1b47a8100e8765b0604bcba2</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>DevTools - Check table cross scope access</sys_name>
         <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy/>
         <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_atf_step_b0ece94d1b47a8100e8765b0604bcba2</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-21 18:59:38</sys_updated_on>
+        <sys_updated_on>2021-03-25 12:24:09</sys_updated_on>
         <table/>
         <test display_value="DataSilosVAM - Installation">4cb2a600db4b6c10ba15a35305961954</test>
         <timeout/>
