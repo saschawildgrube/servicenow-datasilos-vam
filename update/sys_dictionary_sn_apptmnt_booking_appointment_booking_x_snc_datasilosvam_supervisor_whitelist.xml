@@ -54,14 +54,14 @@
         <sys_created_by>sascha.wildgrube</sys_created_by>
         <sys_created_on>2021-03-21 15:32:08</sys_created_on>
         <sys_id>e382aad51bc36c100e8765b0604bcb10</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>DataSilos Supervisor Whitelist</sys_name>
-        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy/>
-        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_dictionary_sn_apptmnt_booking_appointment_booking_x_snc_datasilosvam_supervisor_whitelist</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-21 15:32:38</sys_updated_on>
+        <sys_updated_on>2021-03-27 17:02:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

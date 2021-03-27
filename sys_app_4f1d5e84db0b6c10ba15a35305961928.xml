@@ -13,7 +13,7 @@
         <license_model>none</license_model>
         <logo/>
         <menu/>
-        <name>DataSilosVAM</name>
+        <name>DataSilosVAM WORK IN PROGRESS</name>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
         <runtime_access_tracking>permissive</runtime_access_tracking>
@@ -28,15 +28,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-17 17:55:33</sys_created_on>
         <sys_id>4f1d5e84db0b6c10ba15a35305961928</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-22 22:34:23</sys_updated_on>
+        <sys_updated_on>2021-03-27 17:44:13</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
     </sys_app>
 </record_update>
