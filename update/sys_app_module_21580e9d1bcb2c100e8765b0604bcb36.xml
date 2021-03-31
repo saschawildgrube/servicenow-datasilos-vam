@@ -13,7 +13,7 @@
         <mobile_title>sn_vaccine_sm_task</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>csm_consumer_user</name>
-        <order>10505</order>
+        <order>20505</order>
         <override_menu_roles>false</override_menu_roles>
         <query>&amp;sysparm_view_forced=true</query>
         <report/>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>21580e9d1bcb2c100e8765b0604bcb36</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>csm_consumer_user</sys_name>
         <sys_overrides/>
         <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_app_module_21580e9d1bcb2c100e8765b0604bcb36</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-21 19:56:51</sys_updated_on>
+        <sys_updated_on>2021-03-28 14:12:19</sys_updated_on>
         <timeline_page/>
         <title>csm_consumer_user</title>
         <uncancelable>false</uncancelable>
