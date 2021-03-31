@@ -75,7 +75,7 @@
     </sys_dictionary>
     <sys_update_version action="INSERT_OR_UPDATE">
         <action>DELETE</action>
-        <application display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</application>
+        <application display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</application>
         <file_path/>
         <instance_id>3376da91db26ac1091232f17d49619e1</instance_id>
         <instance_name>vamde</instance_name>
@@ -113,10 +113,10 @@
         <sys_metadata>ed72a6181b0b28100e8765b0604bcb26</sys_metadata>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>DataSilos Global Visibility</sys_name>
-        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_parent display_value="Vaccination Task">8d5d32dddba22010ee94d03cd39619e1</sys_parent>
         <sys_policy/>
-        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_scope_delete display_value="">71a6c815ae97453cb0d30e3ce5450be1</sys_scope_delete>
         <sys_update_name>sys_dictionary_sn_vaccine_sm_task_x_snc_datasilosvam_global_visibility</sys_update_name>
         <sys_update_version display_value="sys_dictionary_sn_vaccine_sm_task_x_snc_datasilosvam_global_visibility">7382e6181b0b28100e8765b0604bcb6c</sys_update_version>

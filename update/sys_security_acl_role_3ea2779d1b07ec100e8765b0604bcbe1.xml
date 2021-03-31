@@ -6,9 +6,9 @@
         <sys_id>3ea2779d1b07ec100e8765b0604bcbe1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sn_vaccine_sm_personal_info.x_snc_datasilosvam_security_clearance.x_snc_datasilos.manager</sys_name>
-        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy/>
-        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_security_acl display_value="sn_vaccine_sm_personal_info.x_snc_datasilosvam_security_clearance">7fda63911b07ec100e8765b0604bcb9d</sys_security_acl>
         <sys_update_name>sys_security_acl_role_3ea2779d1b07ec100e8765b0604bcbe1</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
