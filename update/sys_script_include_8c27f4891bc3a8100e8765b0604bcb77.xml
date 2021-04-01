@@ -36,7 +36,8 @@
 		var strTable = record.getRecordClassName();
 		if (   strTable == 'csm_consumer_user'
 			|| strTable == 'sn_vaccine_sm_personal_info'
-		    || strTable == 'sn_vaccine_sm_task')
+		    || strTable == 'sn_vaccine_sm_task'
+		    || strTable == 'sn_apptmnt_booking_appointment_booking')
 		{
 			var aGroups = GetGroupsFromUser(user.getID(),'x_snc_datasilosvam_vaccination_centerISNOTEMPTY');
 			x_snc_datasilos.RecordAddGroupToWhitelist(record,GetStringValue(aGroups));
@@ -49,13 +50,13 @@
         <sys_created_by>sascha.wildgrube</sys_created_by>
         <sys_created_on>2021-03-20 13:04:24</sys_created_on>
         <sys_id>8c27f4891bc3a8100e8765b0604bcb77</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>ExecuteBusinessRule</sys_name>
-        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_script_include_8c27f4891bc3a8100e8765b0604bcb77</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-04-01 03:51:15</sys_updated_on>
+        <sys_updated_on>2021-04-01 04:14:29</sys_updated_on>
     </sys_script_include>
 </record_update>
