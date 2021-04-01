@@ -14,9 +14,9 @@
             <sys_id>95a226191bc36c100e8765b0604bcbe7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>DataSilos Supervisor Whitelist</sys_name>
-            <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+            <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
             <sys_policy/>
-            <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+            <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
             <sys_update_name>sys_documentation_sn_apptmnt_booking_appointment_booking_x_snc_datasilosvam_supervisor_whitelist_en</sys_update_name>
             <sys_updated_by>sascha.wildgrube</sys_updated_by>
             <sys_updated_on>2021-03-21 15:32:08</sys_updated_on>
