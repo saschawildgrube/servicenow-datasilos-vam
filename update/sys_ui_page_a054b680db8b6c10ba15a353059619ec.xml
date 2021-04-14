@@ -102,6 +102,28 @@ if (strTable == 'sn_apptmnt_booking_appointment_booking')
 		<li>Create groups for each vaccination center and associate these groups with vaccination centers.</li> 
 	</ol>
 	
+	<h2>Runbook</h2>
+	<h3>Incident models</h3>
+	<h4>Individual users complain about not being able to see specific records (like citizens, vaccination requests, tasks or appointments)</h4>
+	<h5>Symptoms</h5>
+	<ul>
+		<li>A user reports that they do not have access to a specific record.</li>
+		<li>After creating a new citizen, errors are being displayed or the just created citizen or request cannot be found.</li>
+	</ul>
+	<h5>Procedure:</h5>
+	<ol>
+		<li>Identify the specific user record.</li>
+		<li>Check if the user has the x_snc_datasilos.sentinel role. If so, the user should not be affected by DataSilosVAM filtering. The root cause is very likely somewhere else.</li>
+		<li>Seek the record in the list view of the containing table using the DataSilos view.</li>
+		<li>Identify the groups of that user.</li>
+		<li>Identify the vaccine centers to which the user's groups are associated.</li>
+		<li>Check the silo and group whitelist to see if the user's groups and associated silos match. Keep in mind that a user's group must be a "supervisor" group in a silo so that a user get's access via the silo whitelist.</li>
+		<li>If the whitelisted silos or groups do not match expectations, the logic that populate the whitelists should be reviewed. Note that if a DataSilos extension sets the ghost field to true for a record, the default DataSilos whitelist population will not be applied.</li>
+		<li>Check if the records are associated to the same vaccination center as the user (via their group).</li>
+		<li>If at least one of the filtering factors (user reference fields, group whitelist, supervisor whitelist, global visibility) in combination with the security clearance level should allow the user to see the record, but the user cannot access the record, then it is very likely that other (non-DataSilos) related business rules or ACLs block the access to that record.</li>
+	</ol>	
+	
+	
 	<h2>License</h2>
 	<g2:no_escape>$[docapi.RenderCopyright(2021,'Sascha Wildgrube')]</g2:no_escape>
 	<g2:no_escape>$[docapi.RenderLicense()]</g2:no_escape>	
@@ -109,9 +131,9 @@ if (strTable == 'sn_apptmnt_booking_appointment_booking')
 
 	<h2>Release Notes</h2>
 
-		<h3>1.2.0 - 2021-04- TODO</h3>
+	<h3>1.1.2 - 2021-04-14</h3>
 	<ol>
-		<li>TODO</li>
+		<li>Added runbook section with a specific incident model.</li>
 	</ol>
 	
 	<h3>1.1.1 - 2021-04-01</h3>
@@ -139,13 +161,13 @@ if (strTable == 'sn_apptmnt_booking_appointment_booking')
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-17 19:37:17</sys_created_on>
         <sys_id>a054b680db8b6c10ba15a353059619ec</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>start</sys_name>
         <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy/>
         <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_ui_page_a054b680db8b6c10ba15a353059619ec</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-04-01 04:29:40</sys_updated_on>
+        <sys_updated_on>2021-04-14 13:55:57</sys_updated_on>
     </sys_ui_page>
 </record_update>
