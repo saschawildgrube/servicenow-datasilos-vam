@@ -2,7 +2,7 @@
     <sys_atf_step action="INSERT_OR_UPDATE">
         <active>true</active>
         <copied_from/>
-        <description>Checks if the scoped app "DataSilos" is installed in a compatible version to: 2.5.1
+        <description>Checks if the scoped app "DataSilos" is installed in a compatible version to: 2.6.0
 </description>
         <display_name>DevTools - Check scoped app dependency</display_name>
         <inputs/>
@@ -15,14 +15,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-17 18:21:08</sys_created_on>
         <sys_id>cee2aa00db4b6c10ba15a35305961967</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>DevTools - Check scoped app dependency</sys_name>
         <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
         <sys_policy/>
         <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
         <sys_update_name>sys_atf_step_cee2aa00db4b6c10ba15a35305961967</sys_update_name>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-22 22:25:18</sys_updated_on>
+        <sys_updated_on>2021-04-14 14:08:04</sys_updated_on>
         <table/>
         <test display_value="DataSilosVAM - Installation">4cb2a600db4b6c10ba15a35305961954</test>
         <timeout/>
@@ -37,10 +37,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-17 18:21:08</sys_created_on>
         <sys_id>31f2aa00db4b6c10ba15a35305961970</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>sascha.wildgrube</sys_updated_by>
-        <sys_updated_on>2021-03-22 22:25:18</sys_updated_on>
-        <value>2.5.1</value>
+        <sys_updated_on>2021-04-14 14:08:04</sys_updated_on>
+        <value>2.6.0</value>
         <variable display_value="">fc5964cadb3da490ba15a353059619b3</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
