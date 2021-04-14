@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_datasilosvam.GetGroupsFromUser</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>This is taken from DevTools 1.13.0 WIP - so should be replaced asap!</description>
+        <name>GetGroupsFromUser</name>
+        <script><![CDATA[function GetGroupsFromUser(strUserSysId,strFilterQuery)
+{
+	function Debug(strText)
+	{
+		x_snc_datasilos.Debug('GetGroupsFromUser: '+strUserSysId+': '+strText);
+	}
+	
+	var GetStringValue = x_snc_devtools.GetStringValue;
+	var RenderValue = x_snc_devtools.RenderValue;	
+	
+	strUserSysId = GetStringValue(strUserSysId);
+	strFilterQuery = GetStringValue(strFilterQuery);
+	
+	var aGroups = [];
+	
+	if (gs.getUser().getID() == strUserSysId)
+	{
+		aGroups = gs.getUser().getMyGroups();
+	}
+	else
+	{
+		var grUserGroups = new GlideRecord('sys_user_grmember');
+		grUserGroups.addQuery('user','=',strUserSysId);
+		grUserGroups.query();
+		while(grUserGroups.next())
+		{
+			var strGroupSysId = GetStringValue(grUserGroups.getValue('group'));
+			if (strGroupSysId != '')
+			{
+				aGroups.push(strGroupSysId);
+			}
+		}
+	}
+		
+	if (aGroups.length == 0)
+	{
+		return aGroups;
+	}
+	
+	if (strFilterQuery == '')
+	{
+		return aGroups;
+	}
+
+	var grGroups = new GlideRecord('sys_user_group');
+	grGroups.addEncodedQuery(strFilterQuery);
+	
+	for (var nIndex = 0; nIndex < aGroups.length; nIndex++)
+	{
+		if (nIndex == 0)
+		{
+			var query = grGroups.addQuery('sys_id',aGroups[nIndex]);
+		}
+		else
+		{
+			query.addOrCondition('sys_id',aGroups[nIndex]);
+		}
+	}
+	grGroups.query();
+	
+	var aGroupsFiltered = [];
+	while (grGroups.next())
+	{
+		var strGroupSysId = GetStringValue(grGroups.getValue('sys_id'));
+		if (strGroupSysId != '')
+		{
+			aGroupsFiltered.push(strGroupSysId);
+		}
+	}
+	return aGroupsFiltered;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-31 08:31:39</sys_created_on>
+        <sys_id>b1122c6c1bd3ec900e8765b0604bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetGroupsFromUser</sys_name>
+        <sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="DataSilosVAM WORK IN PROGRESS">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_update_name>sys_script_include_b1122c6c1bd3ec900e8765b0604bcb16</sys_update_name>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-31 08:31:39</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</application>
+        <file_path/>
+        <instance_id>3376da91db26ac1091232f17d49619e1</instance_id>
+        <instance_name>vamde</instance_name>
+        <name>sys_script_include_b1122c6c1bd3ec900e8765b0604bcb16</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_snc_datasilosvam.GetGroupsFromUser&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;This is taken from DevTools 1.13.0 WIP - so should be replaced asap!&lt;/description&gt;&lt;name&gt;GetGroupsFromUser&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function GetGroupsFromUser(strUserSysId,strFilterQuery)
+{
+	function Debug(strText)
+	{
+		x_snc_datasilos.Debug('GetGroupsFromUser: '+strUserSysId+': '+strText);
+	}
+	
+	var GetStringValue = x_snc_devtools.GetStringValue;
+	var RenderValue = x_snc_devtools.RenderValue;	
+	
+	strUserSysId = GetStringValue(strUserSysId);
+	strFilterQuery = GetStringValue(strFilterQuery);
+	
+	var aGroups = [];
+	
+	if (gs.getUser().getID() == strUserSysId)
+	{
+		aGroups = gs.getUser().getMyGroups();
+	}
+	else
+	{
+		var grUserGroups = new GlideRecord('sys_user_grmember');
+		grUserGroups.addQuery('user','=',strUserSysId);
+		grUserGroups.query();
+		while(grUserGroups.next())
+		{
+			var strGroupSysId = GetStringValue(grUserGroups.getValue('group'));
+			if (strGroupSysId != '')
+			{
+				aGroups.push(strGroupSysId);
+			}
+		}
+	}
+		
+	if (aGroups.length == 0)
+	{
+		return aGroups;
+	}
+	
+	if (strFilterQuery == '')
+	{
+		return aGroups;
+	}
+
+	var grGroups = new GlideRecord('sys_user_group');
+	grGroups.addEncodedQuery(strFilterQuery);
+	
+	for (var nIndex = 0; nIndex &lt; aGroups.length; nIndex++)
+	{
+		if (nIndex == 0)
+		{
+			var query = grGroups.addQuery('sys_id',aGroups[nIndex]);
+		}
+		else
+		{
+			query.addOrCondition('sys_id',aGroups[nIndex]);
+		}
+	}
+	grGroups.query();
+	
+	var aGroupsFiltered = [];
+	while (grGroups.next())
+	{
+		var strGroupSysId = GetStringValue(grGroups.getValue('sys_id'));
+		if (strGroupSysId != '')
+		{
+			aGroupsFiltered.push(strGroupSysId);
+		}
+	}
+	return aGroupsFiltered;
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sascha.wildgrube&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-31 08:31:39&lt;/sys_created_on&gt;&lt;sys_id&gt;b1122c6c1bd3ec900e8765b0604bcb16&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetGroupsFromUser&lt;/sys_name&gt;&lt;sys_package display_value="DataSilosVAM WORK IN PROGRESS" source="x_snc_datasilosvam"&gt;4f1d5e84db0b6c10ba15a35305961928&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="DataSilosVAM WORK IN PROGRESS"&gt;4f1d5e84db0b6c10ba15a35305961928&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b1122c6c1bd3ec900e8765b0604bcb16&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sascha.wildgrube&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-31 08:31:39&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>766159650</payload_hash>
+        <record_name>GetGroupsFromUser</record_name>
+        <reverted_from/>
+        <source>43e932dd1bcb6c100e8765b0604bcb9d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-03-31 08:31:39</sys_created_on>
+        <sys_id>0342a8ec1bd3ec900e8765b0604bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1788768dafd0000001</sys_recorded_at>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-03-31 08:31:39</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>c742a8ec30d3ec9063f0357cfe57ba57</update_guid>
+        <update_guid_history>c742a8ec30d3ec9063f0357cfe57ba57:766159650</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sascha.wildgrube</sys_created_by>
+        <sys_created_on>2021-04-14 14:10:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>bc82c61f506043508b6ef9e125e38a10</sys_id>
+        <sys_metadata>b1122c6c1bd3ec900e8765b0604bcb16</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetGroupsFromUser</sys_name>
+        <sys_package display_value="DataSilosVAM" source="x_snc_datasilosvam">4f1d5e84db0b6c10ba15a35305961928</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="DataSilosVAM">4f1d5e84db0b6c10ba15a35305961928</sys_scope>
+        <sys_scope_delete display_value="">71a6c815ae97453cb0d30e3ce5450be1</sys_scope_delete>
+        <sys_update_name>sys_script_include_b1122c6c1bd3ec900e8765b0604bcb16</sys_update_name>
+        <sys_update_version display_value="sys_script_include_b1122c6c1bd3ec900e8765b0604bcb16">0342a8ec1bd3ec900e8765b0604bcb58</sys_update_version>
+        <sys_updated_by>sascha.wildgrube</sys_updated_by>
+        <sys_updated_on>2021-04-14 14:10:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
